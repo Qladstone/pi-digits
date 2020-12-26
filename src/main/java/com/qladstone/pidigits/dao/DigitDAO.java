@@ -1,9 +1,7 @@
 package com.qladstone.pidigits.dao;
 
 import com.qladstone.pidigits.representation.DigitOfPi;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Component
 public class DigitDAO {
