@@ -27,7 +27,7 @@ public class Controller {
 	}
 
 	@GetMapping("/digits/{position}")
-	public DigitOfPi getDigit(@PathVariable("position") long position) {
+	public DigitOfPi retrieveDigit(@PathVariable("position") long position) {
 		if (position < 0) {
 			throw new ResponseStatusException(HttpStatus.BAD_REQUEST,
 					"position must be non-negative! Given: " + position);
